@@ -6,7 +6,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.8.1"
 
-  name                               = "c6_sandbox_vpc"
+  name                               = "c8_sandbox_vpc"
   cidr                               = "172.31.0.0/16"
   azs                                = data.aws_availability_zones.available.names
   private_subnets                    = ["172.31.1.0/24", "172.31.2.0/24"]
