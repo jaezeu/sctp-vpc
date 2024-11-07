@@ -1,11 +1,6 @@
 name: Terraform Apply
 
 on: 
-  schedule:
-    - cron: '0 10 * * 2' # Every Tuesday at 6:00 PM (GMT +8)
-    - cron: '0 10 * * 4' # Every Thursday at 6:00 PM (GMT +8)
-    - cron: '0 1 * * 6'  # Every Saturday at 9:00 AM (GMT +8)
-
   workflow_dispatch:
 
 env:            
