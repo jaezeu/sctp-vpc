@@ -21,4 +21,3 @@ module "vpc" {
     terraform = "true"
   }
 }
-#
