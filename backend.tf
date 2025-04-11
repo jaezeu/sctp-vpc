@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "sctp-ce9-tfstate"
-    key    = "ce9-vpc.tfstate" #Name of state file in s3 bucket
-    region = "us-east-1"
+    bucket = "sctp-ce10-tfstate"
+    key    = "ce10-vpc.tfstate"
+    region = "ap-southeast-1"
   }
 }
