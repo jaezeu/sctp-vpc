@@ -1,13 +1,13 @@
-# SCTP Shared VPC Terraform
+# Terraform Shared VPC
 
-This repository provisions a shared AWS VPC for learners using Terraform.
+This repository provisions a shared AWS VPC using Terraform.
 
 ## Region and State
 
-- AWS region: `ap-southeast-1`
+- AWS region: `ap-southeast-1` or `us-east-1`
 - Remote Terraform state backend:
 	- S3 bucket: `sctp-core-tfstate`
-	- State key: `ce-vpc.tfstate`
+	- State key: `ce-learner-vpc.tfstate`
 
 ## Terraform Module
 
@@ -17,7 +17,7 @@ This project uses:
 
 ## Prerequisites
 
-- Terraform installed (1.x recommended)
+- Terraform installed (>= 1.14 recommended)
 - AWS credentials configured locally (for example via `aws configure`, environment variables, or IAM role)
 - Access to the backend bucket `sctp-core-tfstate`
 
@@ -42,3 +42,4 @@ terraform destroy
 - `provider.tf`: AWS provider and region configuration
 - `backend.tf`: Remote backend configuration for Terraform state
 - `main.tf`: VPC and subnet definitions
+- `versions.tf`: Version constraints to use this configuration
